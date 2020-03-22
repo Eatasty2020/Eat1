@@ -8,8 +8,9 @@
     <string name="ProBit">Diseñada por el equipo ProBit para el Programa b_IT de CUTI e INEFOP.</string>
     <!--Activity Login-->
     <string name="tituloLogin"> LOGIN </string>
-    <string name="botonConectar"> CONECTAR </string>
-    <string name="botonRegistrarse"> REGISTRARSE </string>
+    <string name="botonConectar"> Iniciar Sesion </string>
+    <string name="botonRegistrarse"> Registrarte </string>
+    <string name="OlvidoPassword"> LOGIN </string>
     <!--Activity Eventos-->
     <string name="tituloEventos">EVENTOS</string>
 </resources>

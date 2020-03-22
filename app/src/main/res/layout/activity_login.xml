@@ -11,7 +11,7 @@
         android:id="@+id/loginTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:text="@string/tituloLogin"
         android:textColor="@android:color/black"
         android:textSize="30sp"
@@ -23,14 +23,15 @@
         android:id="@+id/loginEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:background="@color/fondoBlanco"
+        android:layout_marginTop="60dp"
+        android:background="@color/fondoGris"
         android:ems="10"
         android:hint="Usuario (e-mail)"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginTitulo" />
 
@@ -38,8 +39,8 @@
         android:id="@+id/loginPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@color/fondoBlanco"
+        android:layout_marginTop="44dp"
+        android:background="@color/fondoGris"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
@@ -58,15 +59,16 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/botonRegistrarse"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginPassword"
-        app:layout_constraintVertical_bias="0.534" />
+        app:layout_constraintVertical_bias="0.61" />
 
     <Button
         android:id="@+id/botonRegistrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="216dp"
+        android:layout_marginBottom="156dp"
         android:background="@color/colorPrimary"
         android:text="@string/botonRegistrarse"
         android:textColor="@android:color/black"
@@ -74,4 +76,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="226dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="112dp"
+        android:text="Have you forgotten the password?"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

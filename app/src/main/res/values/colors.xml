@@ -5,4 +5,5 @@
     <color name="colorAccent">#6B8E23</color>
     <color name="bordeBoton">#000000</color>
     <color name="fondoBlanco">#FFFFFF</color>
+    <color name="fondoGris">#CDCDCD</color>
 </resources>
