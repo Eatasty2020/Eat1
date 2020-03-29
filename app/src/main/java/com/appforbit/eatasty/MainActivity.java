@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -14,6 +15,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.File;
@@ -23,12 +25,38 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button botonUnirseAhora, loginBoton;
+
     public ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        botonUnirseAhora = (Button) findViewById(R.id.main_IngresarAhoraBtn);
+        loginBoton = (Button) findViewById(R.id.main_loginBtn);
+
+        loginBoton.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        botonUnirseAhora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view)
+            {
+                Intent intent = new Intent(MainActivity.this, Registro.class);
+                startActivity(intent);
+            }
+
+        });
+
 
         img = (ImageView)findViewById(R.id.imageView);
 
@@ -37,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        //poner icono en el action bar
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher_foreground);
+
 
     }
 
@@ -103,5 +129,6 @@ public class MainActivity extends AppCompatActivity {
         Intent evento = new Intent(this, Eventos.class);
         startActivity(evento);
     }
+
 
 }
