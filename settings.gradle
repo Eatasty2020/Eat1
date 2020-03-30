@@ -1,0 +1,3 @@
+rootProject.name='EaTasty'
+include ':app'
+include ':googlemap'
